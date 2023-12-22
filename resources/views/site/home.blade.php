@@ -7,14 +7,14 @@
         <!-- Banner Hero -->
         <div class="card text-start">
           <div class="card-body ">
-            <h1 class="display-4 text-center my-2 fw-lighter scroll-reveal">
+            <h1 class="display-4 text-center my-2 fw-lighter">
               Laravel Social Listening
             </h1>
             <h1 class="h1 text-center mt-3 fw-lighter">
               Free social listening powered by GitHub Page & Github Action
             </h1>
             <div class="col-12 d-flex justify-content-center" id="learn-more">
-              <a data-bs-spy="scroll" href="#features" class="btn btn-lg btn-secondary fw-light px-4" data-bs-toggle="modal" data-bs-target="#modal-report">
+              <a data-bs-spy="scroll" href="#features" class="btn btn-lg btn-warning fw-light px-4 scroll-reveal" data-bs-toggle="modal" data-bs-target="#modal-report">
                 Get Started
               </a>
             </div>
@@ -26,6 +26,11 @@
           <div class="card-body" id="features">
             <h4 class="card-title">Features</h4>
             <p class="card-text">Text</p>
+            @php
+              $follower = 100005050;
+              $words = \Rmunate\Utilities\SpellNumber::value($follower)->locale('en')->toLetters();
+            @endphp
+            <p data-kute-text="{{$words}}">Number of follower.</p>
           </div>
           <ul class="list-group list-group-flush">
             <li class="list-group-item">Item 1</li>
@@ -61,6 +66,37 @@
         </div>
         <!-- End Documentation -->
         <h4 class="scroll-reveal">Documentation</h4>
+
+
+
+
+
+
+
+
+
+        <!-- Comment -->
+        <script
+          src="https://utteranc.es/client.js"
+          repo="today-mm/laravel-social-listening"
+          issue-term="pathname"
+          theme="dark-blue"
+          crossorigin="anonymous"
+          async>
+        </script>
+        <!-- End Comment -->
+
+
+
+
+
+
+
+
+
+
+
+
 
         @include('_layout.partials.footer-btns')
       </div>

@@ -150,12 +150,6 @@ return [
             'icon' => 'ti ti-home',
             'url' => '#'
         ],
-        // Navbar items:
-        [
-            'text' => 'Home',
-            'icon' => 'ti ti-home',
-            'url' => '#'
-        ],
         [
             'text' => 'Static Page',
             'url' => '#',

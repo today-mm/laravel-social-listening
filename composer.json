@@ -12,6 +12,7 @@
         "laravel/framework": "^9.19",
         "laravel/sanctum": "^3.0",
         "laravel/tinker": "^2.7",
+        "rmunate/spell-number": "^4.2",
         "takielias/tablar": "^3.0"
     },
     "require-dev": {
